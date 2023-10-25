@@ -8,6 +8,31 @@
 ## Sobre <a name = "about"></a>
 Um sistema de criação e visualização de cursos, semelhante ao Udemy, mas exclusivo para os estudantes e professores do curso de Engenharia de Software da UCSAL.
 
+## Ideias <a name = "ideias"></a>
+Aqui colocaremos as nossas ideias para o projeto.
+
+### Essencial
+- [ ] Criação de cursos
+- [ ] Visualização de cursos
+- [ ] Catalogo de cursos
+- [ ] Tela de Login
+
+### Se der tempo
+- [ ] Usuarios especiais (administradores, professores, etc)
+- [ ] Sistema de avaliação de cursos
+- [ ] Tela de perfil
+- [ ] Tela de configurações
+- [ ] Tela de notificações
+- [ ] Tela de mensagens
+- [ ] Tela de busca
+- [ ] Tela de categorias
+- [ ] Tela de cursos recomendados
+- [ ] Tela de cursos em andamento
+- [ ] Tela de cursos concluídos
+- [ ] Tela de cursos favoritos
+- [ ] Sistema de comentários
+- [ ] Sistema de curtidas
+
 ## Getting Started <a name = "getting_started"></a>
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
