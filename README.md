@@ -7,6 +7,7 @@
 
 ## Sobre <a name = "about"></a>
 Um sistema de criação e visualização de cursos, semelhante ao Udemy, mas exclusivo para os estudantes e professores do curso de Engenharia de Software da UCSAL.
+Objetivo é criar uma plataforma onde os alunos possam criar cursos e compartilhar conhecimento com os colegas, e os professores possam criar cursos para auxiliar os alunos em suas disciplinas.
 
 ## Getting Started <a name = "getting_started"></a>
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
