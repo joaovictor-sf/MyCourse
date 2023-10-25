@@ -7,6 +7,7 @@
 
 ## Sobre <a name = "about"></a>
 Um sistema de criação e visualização de cursos, semelhante ao Udemy, mas exclusivo para os estudantes e professores do curso de Engenharia de Software da UCSAL.
+Objetivo é criar uma plataforma onde os alunos possam criar cursos e compartilhar conhecimento com os colegas, e os professores possam criar cursos para auxiliar os alunos em suas disciplinas.
 
 ## Ideias <a name = "ideias"></a>
 Aqui colocaremos as nossas ideias para o projeto.
