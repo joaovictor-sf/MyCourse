@@ -11,6 +11,9 @@ export class LoginComponent {
 
   login() {
     console.log('A função de login foi chamada.'); // Exemplo de mensagem de log
-    this.router.navigate(['PaginaInicialComponent']);
+    this.router.navigate(['/home']);
+
+    //location.replace(document.baseURI + '/home')
+    //this.router.navigate(['PaginaInicialComponent']);
   }
 }
