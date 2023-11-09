@@ -1,9 +1,14 @@
-.teste {
+body {
   background-image: url('/assets/imagemPlanoFundo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.aumentarDiv{
+.aumentarDiv {
   height: 700px;
+  margin-left: 12%;
+}
+
+.navbar {
+  background-color: gray !important;
 }
