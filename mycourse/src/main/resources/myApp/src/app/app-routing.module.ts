@@ -5,7 +5,7 @@ import { PaginaInicialComponent } from './pages/pagina-inicial/pagina-inicial.co
 import { PaginaDeReproducaoDeVideosComponent } from './pages/pagina-de-reproducao-de-videos/pagina-de-reproducao-de-videos.component';
 
 const routes: Routes = [
-  { path: "", redirectTo: "login", pathMatch: 'full' },
+  //{ path: "", redirectTo: "login", pathMatch: 'full' },
   { path: "login", component: LoginComponent },
   { path: "home", component: PaginaInicialComponent },
   { path: "video", component: PaginaDeReproducaoDeVideosComponent },
