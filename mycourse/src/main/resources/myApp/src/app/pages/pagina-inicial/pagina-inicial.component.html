@@ -1,5 +1,10 @@
-<div class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class=".navbar-brand" href="#"><img src="assets/logo-responsivo.png" alt=""></a>
+<section class="main-content">
+<div class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="margemLogo">
+    <a  class="navbar-brand " href="#">
+      <img class="tamanhoLogo" src="assets/logoEmPng.png" alt="">
+    </a>
+  </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -19,7 +24,8 @@
     </ul>
   </div>
 </div>
-<div class="container d-flex align-items-start flex-column">
+<div class="spacer"></div>
+<div class="container d-flex align-items-start flex-column degrade p-2 mt-5" style="border-radius: 10px;">
   <div class="d-flex flex-column p-2">
     <div class="p-2">
       <h2>Amplie suas oportunidades de carreira com Python</h2>
@@ -34,16 +40,21 @@
   </div>
   <div class="d-flex justify-content-start p-2">
     <div class="d-flex justify-content-between">
-      <div><img src="assets/test.jpg" alt="TESTE" class="img-fluid p-4" id="Thumbnail"></div>
-      <div><img src="assets/test.jpg" alt="TESTE" class="img-fluid p-4" id="Thumbnail"></div>
-      <div><img src="assets/test.jpg" alt="TESTE" class="img-fluid p-4" id="Thumbnail"></div>
-      <div><img src="assets/test.jpg" alt="TESTE" class="img-fluid p-4" id="Thumbnail"></div>
-      <div><img src="assets/test.jpg" alt="TESTE" class="img-fluid p-4" id="Thumbnail"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4" *ngFor="let itemPython of listaCursosPython" class="col">
+            <a href="">
+              <img class="img-fluid" [src]="extrairInfo(itemPython.videoUrl).urlDaImagem">
+            </a>
+            <label class="d-flex justify-content-center">{{ itemPython.name }}</label>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="container d-flex align-items-start flex-column">
+<div class="container d-flex align-items-start flex-column degrade p-2 mt-3" style="border-radius: 10px;">
   <div class="d-flex flex-column p-2">
     <div class="p-2">
       <h2>Evolua no mercado com Java</h2>
@@ -60,16 +71,26 @@
   </div>
   <div class="d-flex justify-content-start p-2">
     <div class="d-flex justify-content-between">
-      <div><img src="assets/test.jpg" alt="TESTE" class="img-fluid p-4" id="Thumbnail"></div>
-      <div><img src="assets/test.jpg" alt="TESTE" class="img-fluid p-4" id="Thumbnail"></div>
-      <div><img src="assets/test.jpg" alt="TESTE" class="img-fluid p-4" id="Thumbnail"></div>
-      <div><img src="assets/test.jpg" alt="TESTE" class="img-fluid p-4" id="Thumbnail"></div>
-      <div><img src="assets/test.jpg" alt="TESTE" class="img-fluid p-4" id="Thumbnail"></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex overflow-auto">
+          <div class="col-3 " style="margin-right: 15px;" *ngFor="let itemJava of listaCursosJava">
+            <a href="">
+              <img class="img-fluid" [src]="extrairInfo(itemJava.videoUrl).urlDaImagem">
+            </a>
+            <label class="d-flex justify-content-center">{{ itemJava.name }}</label>
+          </div>
+        </div>
+         </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="container d-flex align-items-start flex-column">
+<div class="container d-flex align-items-start flex-column degrade p-2 mt-3" style="border-radius: 10px;">
   <div class="d-flex flex-column p-2">
     <div class="p-2">
       <h2>Aprenda Excel</h2>
@@ -86,13 +107,19 @@
   </div>
   <div class="d-flex justify-content-start p-2">
     <div class="d-flex justify-content-between">
-      <div><img src="assets/test.jpg" alt="TESTE" class="img-fluid p-4" id="Thumbnail"></div>
-      <div><img src="assets/test.jpg" alt="TESTE" class="img-fluid p-4" id="Thumbnail"></div>
-      <div><img src="assets/test.jpg" alt="TESTE" class="img-fluid p-4" id="Thumbnail"></div>
-      <div><img src="assets/test.jpg" alt="TESTE" class="img-fluid p-4" id="Thumbnail"></div>
-      <div><img src="assets/test.jpg" alt="TESTE" class="img-fluid p-4" id="Thumbnail"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4" *ngFor="let itemExcel of listaCursosExcel" class="col">
+            <a (click)="redirecionarParaReproducao(itemExcel)" >
+              <img class="img-fluid" [src]="extrairInfo(itemExcel.videoUrl).urlDaImagem">
+            </a>
+            <label class="d-flex justify-content-center">{{ itemExcel.name }}</label>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+<div class="spacer"></div>
 
-<p>desing by Guilherme</p>
+</section>
