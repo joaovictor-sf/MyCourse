@@ -1,48 +1,50 @@
 <body>
-  <section class="main-content">
-    <div class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="assets/logo-responsivo.png" alt="Logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="aumentarDiv container d-flex align-items-center justify-content-center">
-      <div class="row ">
-        <div class=" offset-md-3">
+  <section class="imagemFundo main-content">
+    <div
+      class="aumentarDiv container d-flex align-items-center justify-content-center"
+    >
+      <div class="row">
+        <div class="">
           <div class="card">
-            <form [formGroup]="form" >
-            <div class="card-header">
-              <h5>Login</h5>
-            </div>
-            <div class="card-body">
+            <form [formGroup]="form">
+              <div class="card-header">
+                <h5>Login</h5>
+              </div>
+              <div class="card-body">
                 <div class="form-group">
                   <label for="text">Usuário</label>
-                  <input formControlName="login" type="text" class="form-control" id="email" name="email" placeholder="Seu usuário de aluno UCSAL">
+                  <input
+                    formControlName="login"
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Seu usuário de aluno UCSAL"
+                  />
                 </div>
                 <div class="form-group">
                   <label for="senha">Senha</label>
-                  <input formControlName="password" type="password" class="form-control" id="senha" name="senha" placeholder="Sua senha">
+                  <input
+                    formControlName="password"
+                    type="password"
+                    class="form-control"
+                    id="senha"
+                    name="senha"
+                    placeholder="Sua senha"
+                  />
                 </div>
                 <div>
-                  <label class="text-danger">{{mensagemLogin}}</label>
+                  <label class="text-danger">{{ mensagemLogin }}</label>
                 </div>
-                <button (click)="login()" type="submit" class="mt-4 btn btn-primary">Entrar</button>
-            </div>
-          </form>
+                <button
+                  (click)="login()"
+                  type="submit"
+                  class="mt-4 btn btn-primary"
+                >
+                  Entrar
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

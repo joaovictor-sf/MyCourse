@@ -1,40 +1,38 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-pagina-de-reproducao-de-videos',
   templateUrl: './pagina-de-reproducao-de-videos.component.html',
-  styleUrls: ['./pagina-de-reproducao-de-videos.component.scss']
+  styleUrls: ['./pagina-de-reproducao-de-videos.component.scss'],
 })
 export class PaginaDeReproducaoDeVideosComponent implements OnInit {
+  videoId: any;
+  videoParaInput: any;
 
-  videoId: any
-
-
-  constructor(
-    private route: ActivatedRoute
-  ){
-
-  }
+  constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
-    this.route.queryParams.subscribe(params => {
+    this.route.queryParams.subscribe((params) => {
       this.videoId = params['videoId'];
+      this.videoParaInput = params['videoParaInput'];
       console.log('Video ID recebido:', this.videoId);
+      console.log(this.videoParaInput);
     });
-    this.loadVideo(this.videoId)
+    this.loadVideo(this.videoId);
   }
 
   loadVideo(videoId: any) {
     // Verificar se o elemento existe antes de manipulá-lo
     const videoContainer = document.getElementById('video-container');
     if (videoContainer) {
-      var iframeCode = '<iframe width="1280" height="720px" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe>';
+      var iframeCode =
+        '<iframe width="1280" height="720px" src="https://www.youtube.com/embed/' +
+        videoId +
+        '" frameborder="0" allowfullscreen></iframe>';
       videoContainer.innerHTML = iframeCode;
     } else {
       console.error("Elemento 'video-container' não encontrado no DOM.");
     }
   }
-
 }
